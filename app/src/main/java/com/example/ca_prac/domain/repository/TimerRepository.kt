@@ -8,4 +8,5 @@ interface TimerRepository {
     suspend fun startTimer()
     suspend fun pauseTimer()
     suspend fun updateTimer(type: TimerType)
+    suspend fun resetTimer()
 }
