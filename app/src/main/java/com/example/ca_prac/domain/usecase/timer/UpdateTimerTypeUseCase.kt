@@ -3,7 +3,7 @@ import com.example.ca_prac.domain.model.TimerType
 import com.example.ca_prac.domain.repository.TimerRepository
 import javax.inject.Inject
 
-class UpdateTimerUseCase @Inject constructor(
+class UpdateTimerTypeUseCase @Inject constructor(
     val repository: TimerRepository
 ) {
     suspend operator fun invoke(type: TimerType) = repository.updateTimer(type)
